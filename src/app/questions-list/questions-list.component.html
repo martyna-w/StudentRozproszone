@@ -1,0 +1,61 @@
+<ng-container *ngFor="let quest of questions">
+  <div id="question">
+    <h3>
+      <span style="font-family: Georgia;">{{ quest.question }}</span>
+    </h3>
+  </div>
+  <div id="answers">
+    <label class="container">
+      {{ quest.goodAnwser }}
+      <input
+        type="radio"
+        name="{{ quest.id }}"
+        id="1 "
+        value="{{ quest.goodAnwser }}"
+        (change)="countScore()"
+      />
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      {{ quest.fakeAnwserOne }}
+      <input
+        type="radio"
+        name="{{ quest.id }}"
+        id="2"
+        value="{{ quest.fakeAnwserOne }}"
+      />
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      {{ quest.fakeAnwserTwo }}
+      <input
+        type="radio"
+        name="{{ quest.id }}"
+        id="3"
+        value="{{ quest.fakeAnwserTwo }}"
+      />
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      {{ quest.fakeAnwserThree }}
+      <input
+        type="radio"
+        name="{{ quest.id }}"
+        id="4"
+        value="{{ quest.fakeAnwserThree }}"
+      />
+      <span class="checkmark"></span>
+    </label>
+  </div>
+  <button class="button" (click)="goToEditQuestion(quest.id)">
+    Edytuj pytanie
+  </button>
+  <button class="button" (click)="deleteQuestion(quest.id)">
+    Usuń pytanie
+  </button>
+</ng-container>
+<div id="question">
+  <button class="button" (click)="postAnwsers()">
+    WYŚLIJ
+  </button>
+</div>

@@ -1,0 +1,75 @@
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Wpisz treść nowego pytania:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="description"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Wpisz treść prawidłowej odpowiedzi:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="goodAnwser"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Wpisz treść pierwszej odpowiedzi:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="fakeAnwserOne"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Wpisz treść drugiej odpowiedzi:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="fakeAnwserTwo"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Wpisz treść trzeciej odpowiedzi:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="fakeAnwserThree"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+
+<br />
+<div id="question">
+  <button (click)="addQuestion()" class="button">DODAJ</button>
+</div>
