@@ -1,7 +1,9 @@
 <ng-container *ngFor="let quest of questions">
   <div id="question">
     <h3>
-      <span style="font-family: Georgia;" class="text">{{ quest.question }}</span>
+      <span style="font-family: Georgia;" class="text">{{
+        quest.question
+      }}</span>
     </h3>
   </div>
   <div id="answers">
@@ -10,7 +12,6 @@
       <input
         type="radio"
         name="{{ quest.id }}"
-        id="1 "
         value="{{ quest.goodAnwser }}"
         (change)="countScore()"
       />
@@ -21,7 +22,6 @@
       <input
         type="radio"
         name="{{ quest.id }}"
-        id="2"
         value="{{ quest.fakeAnwserOne }}"
       />
       <span class="checkmark"></span>
@@ -31,7 +31,6 @@
       <input
         type="radio"
         name="{{ quest.id }}"
-        id="3"
         value="{{ quest.fakeAnwserTwo }}"
       />
       <span class="checkmark"></span>
@@ -41,7 +40,6 @@
       <input
         type="radio"
         name="{{ quest.id }}"
-        id="4"
         value="{{ quest.fakeAnwserThree }}"
       />
       <span class="checkmark"></span>
