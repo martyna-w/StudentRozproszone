@@ -30,7 +30,9 @@ export class EditQuestionsListComponent implements OnInit {
   }
 
   deleteQuestion(id) {
-    this.qs.deleteQuestion(id);
+    this.qs.deleteQuestion(id).catch((e) => {
+      alert(e);
+    });
   }
 
   postAnwsers() {

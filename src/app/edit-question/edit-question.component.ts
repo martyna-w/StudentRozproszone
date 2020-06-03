@@ -48,6 +48,8 @@ export class EditQuestionComponent implements OnInit {
     };
     console.log(json);
     console.log(this.id);
-    this.qs.putQuestion(this.id, json);
+    this.qs.putQuestion(this.id, json).catch((e) => {
+      alert(e);
+    });
   }
 }

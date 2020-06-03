@@ -18,7 +18,6 @@ export class AddQuestionComponent implements OnInit {
   fakeAnwserOne: string;
   fakeAnwserTwo: string;
   fakeAnwserThree: string;
-  result: string;
 
   constructor(private qs: QuestionsService, private formBuilder: FormBuilder) {}
 
@@ -33,7 +32,7 @@ export class AddQuestionComponent implements OnInit {
   }
 
   addQuestion() {
-    const json: object = {
+    const object: object = {
       Question: this.description,
       GoodAnwser: this.goodAnwser,
       FakeAnwserOne: this.fakeAnwserOne,
@@ -47,7 +46,8 @@ export class AddQuestionComponent implements OnInit {
       );
     }
 
-    console.log(this.AddQuestionForm.value);
-    this.qs.postQuestions(json);
+    this.qs.postQuestions(object).catch((e) => {
+      window.alert(e);
+    });
   }
 }

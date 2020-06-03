@@ -1,7 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 
-import { Router } from "@angular/router";
-
 import { QuestionsService } from "../Questions.Service";
 import { Questions } from "../Questions";
 
@@ -16,13 +14,18 @@ export class QuestionsListComponent implements OnInit {
 
   score: number = 0;
 
-  constructor(private qs: QuestionsService, private router: Router) {}
+  constructor(private qs: QuestionsService) {}
 
   ngOnInit() {
     let self = this;
-    self.qs.getQuestions().then((result) => {
-      self.questions = result as Questions[];
-    });
+    self.qs
+      .getQuestions()
+      .then((result) => {
+        self.questions = result as Questions[];
+      })
+      .catch((e) => {
+        alert(e);
+      });
   }
 
   countScore() {
