@@ -47,9 +47,15 @@
       <span class="checkmark"></span>
     </label>
   </div>
+  <button class="button" (click)="goToEditQuestion(quest.id)">
+    Edytuj pytanie
+  </button>
+  <button class="button" (click)="deleteQuestion(quest.id)">
+    Usuń pytanie
+  </button>
 </ng-container>
 <div id="question">
   <button class="button" (click)="postAnwsers()">
-    WYŚLIJ
+    Dodaj pytanie
   </button>
 </div>

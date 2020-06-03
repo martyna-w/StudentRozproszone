@@ -1,10 +1,71 @@
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Edytuj treść nowego pytania:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input [(ngModel)]="description" class="placeholder" />
+</div>
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Edytuj treść prawidłowej odpowiedzi:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="goodAnwser"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Edytuj treść pierwszej odpowiedzi:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="fakeAnwserOne"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Edytuj treść drugiej odpowiedzi:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="fakeAnwserTwo"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+<div id="question">
+  <h3>
+    <span style="font-family: Georgia;" class="text"
+      >Edytuj treść trzeciej odpowiedzi:</span
+    >
+  </h3>
+</div>
+<div id="answers">
+  <input
+    [(ngModel)]="fakeAnwserThree"
+    placeholder="wpisz tutaj"
+    class="placeholder"
+  />
+</div>
+
 <br />
-<div>
-  <input [(ngModel)]="description" /> <br />
-  <input [(ngModel)]="goodAnwser" /> <br />
-  <input [(ngModel)]="fakeAnwserOne" /> <br />
-  <input [(ngModel)]="fakeAnwserTwo" /> <br />
-  <input [(ngModel)]="fakeAnwserThree" /> <br />
-  <br />
+<div id="question">
   <button (click)="editQuestion()">Edytuj pytanie</button>
 </div>

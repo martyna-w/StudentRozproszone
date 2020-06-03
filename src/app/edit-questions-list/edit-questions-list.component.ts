@@ -6,12 +6,12 @@ import { QuestionsService } from "../Questions.Service";
 import { Questions } from "../Questions";
 
 @Component({
-  selector: "app-questions-list",
-  templateUrl: "./questions-list.component.html",
-  styleUrls: ["./questions-list.component.css"],
+  selector: "app-edit-questions-list",
+  templateUrl: "./edit-questions-list.component.html",
+  styleUrls: ["./edit-questions-list.component.css"],
   providers: [QuestionsService],
 })
-export class QuestionsListComponent implements OnInit {
+export class EditQuestionsListComponent implements OnInit {
   questions: Questions[];
 
   score: number = 0;
@@ -29,8 +29,15 @@ export class QuestionsListComponent implements OnInit {
     this.score = 1 + this.score;
   }
 
+  deleteQuestion(id) {
+    this.qs.deleteQuestion(id);
+  }
+
   postAnwsers() {
-    alert("Liczba poprawnych odpowiedzi " + this.score);
-    this.score = 0;
+    this.router.navigate(["add-question"]);
+  }
+
+  goToEditQuestion(id) {
+    this.router.navigate(["edit-question", id]);
   }
 }

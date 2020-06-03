@@ -1,0 +1,78 @@
+#question {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #e6e6e6;
+  height: 30px;
+}
+
+#answers {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 100px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #0066cc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #0066cc;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+.button {
+  float: left;
+  width: 10%;
+  height: 35px;
+  background: #0066cc;
+  color: white;
+  border-color: #e6e6e6;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}

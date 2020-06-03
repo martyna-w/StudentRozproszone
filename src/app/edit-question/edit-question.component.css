@@ -1,0 +1,35 @@
+#question {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #e6e6e6;
+  height: 30px;
+}
+
+#answers {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 30px;
+}
+
+.placeholder {
+  width: 45%;
+  height: 30px;
+  margin-left: 30px;
+}
+
+.button {
+  width: 10%;
+  height: 35px;
+  background: #0066cc;
+  margin-left: 770px;
+  margin-left: 568px;
+  color: white;
+  border-color: #e6e6e6;
+}
+
+.text {
+  margin-left: 30px;
+}

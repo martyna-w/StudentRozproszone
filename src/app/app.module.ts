@@ -9,6 +9,7 @@ import { AppComponent } from "./app.component";
 import { QuestionsListComponent } from "./questions-list/questions-list.component";
 import { EditQuestionComponent } from "./edit-question/edit-question.component";
 import { AddQuestionComponent } from "./add-question/add-question.component";
+import { EditQuestionsListComponent } from './edit-questions-list/edit-questions-list.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AddQuestionComponent } from "./add-question/add-question.component";
     QuestionsListComponent,
     EditQuestionComponent,
     AddQuestionComponent,
+    EditQuestionsListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
