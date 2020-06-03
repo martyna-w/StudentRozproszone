@@ -17,19 +17,21 @@
 .placeholder {
   width: 45%;
   height: 30px;
-  margin-left: 30px;
+  margin-left: 20px;
+  text-size-adjust:200%;
 }
 
 .button {
-  width: 10%;
+  width: 15%;
   height: 35px;
   background: #0066cc;
   margin-left: 770px;
-  margin-left: 568px;
+  margin-left: 1200px;
   color: white;
   border-color: #e6e6e6;
+  font-size: 15px;
 }
 
 .text {
-  margin-left: 30px;
+  margin-left: 20px;
 }

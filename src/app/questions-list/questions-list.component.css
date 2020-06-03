@@ -21,6 +21,7 @@
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 15px;
+  margin-left: 20px;
 }
 
 .container input {
@@ -68,11 +69,15 @@
 
 .button {
   float: left;
-  width: 10%;
+  width: 15%;
   height: 35px;
   background: #0066cc;
   color: white;
   border-color: #e6e6e6;
   margin-bottom: 1em;
-  margin-left: 1em;
+  margin-left: 1200px;
+}
+
+.text {
+  margin-left: 20px;
 }

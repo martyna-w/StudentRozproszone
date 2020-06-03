@@ -11,7 +11,7 @@
   padding: 20px;
   width: 100%;
   background-color: #f1f1f1;
-  height: 100px;
+  height: 80px;
 }
 
 .container {
@@ -21,6 +21,7 @@
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 15px;
+  margin-left: 20px;
 }
 
 .container input {
@@ -66,13 +67,41 @@
   background: white;
 }
 
+
 .button {
+  float: left;
+  width: 15%;
+  height: 35px;
+  background: #0066cc;
+  color: white;
+  border-color: #e6e6e6;
+  margin-left: 1200px;
+  margin-bottom: 1em;
+  font-size: 15px;
+}
+
+.buttonE {
   float: left;
   width: 10%;
   height: 35px;
   background: #0066cc;
   color: white;
   border-color: #e6e6e6;
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.buttonD {
+  float: left;
+  width: 10%;
+  height: 35px;
+  background: #0066cc;
+  color: white;
+  border-color: #e6e6e6;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.text {
+  margin-left: 20px;
 }

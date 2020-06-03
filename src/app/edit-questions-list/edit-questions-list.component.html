@@ -1,10 +1,11 @@
 <ng-container *ngFor="let quest of questions">
   <div id="question">
     <h3>
-      <span style="font-family: Georgia;">{{ quest.question }}</span>
+      <span style="font-family: Georgia;" class="text">{{ quest.question }}</span>
     </h3>
   </div>
   <div id="answers">
+    <br />
     <label class="container">
       {{ quest.goodAnwser }}
       <input
@@ -47,12 +48,14 @@
       <span class="checkmark"></span>
     </label>
   </div>
-  <button class="button" (click)="goToEditQuestion(quest.id)">
-    Edytuj pytanie
-  </button>
-  <button class="button" (click)="deleteQuestion(quest.id)">
-    Usuń pytanie
-  </button>
+  <div id="answers">
+    <button class="buttonE" (click)="goToEditQuestion(quest.id)">
+      Edytuj pytanie
+    </button>
+    <button class="buttonD" (click)="deleteQuestion(quest.id)">
+      Usuń pytanie
+    </button>
+  </div>
 </ng-container>
 <div id="question">
   <button class="button" (click)="postAnwsers()">
