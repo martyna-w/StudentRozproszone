@@ -45,7 +45,7 @@ export class AddQuestionComponent implements OnInit {
 
     if (this.AddQuestionForm.invalid)
     {
-      alert("Każde pole musi być wypełnione! Pytanie musi mieć więcej niż 15 znaków.");
+      alert("Każde pole musi być wypełnione! ");
     }
 
     console.log(this.AddQuestionForm.value);
