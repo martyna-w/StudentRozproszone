@@ -10,6 +10,7 @@
            class="placeholder"
            maxlength="100"
            formControlName="NowePytanie"
+           (keypress)="omit_special_char($event)"
            />
   </div>
   <div id="question">
@@ -23,6 +24,7 @@
            class="placeholder"
            maxlength="100"
            formControlName="NowaDobraOdp"
+           (keypress)="omit_special_char($event)"
            />
   </div>
   <div id="question">
@@ -36,6 +38,7 @@
            class="placeholder"
            maxlength="100"
            formControlName="Nowa1ZlaOdp"
+           (keypress)="omit_special_char($event)"
            />
   </div>
   <div id="question">
@@ -49,6 +52,7 @@
            class="placeholder"
            maxlength="100"
            formControlName="Nowa2ZlaOdp"
+           (keypress)="omit_special_char($event)"
            />
   </div>
   <div id="question">
@@ -62,6 +66,7 @@
            class="placeholder"
            maxlength="100"
            formControlName="Nowa3ZlaOdp"
+           (keypress)="omit_special_char($event)"
            />
   </div>
 

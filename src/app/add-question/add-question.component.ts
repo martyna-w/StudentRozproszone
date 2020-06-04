@@ -24,18 +24,18 @@ export class AddQuestionComponent implements OnInit {
 
   ngOnInit() {
     this.AddQuestionForm = this.formBuilder.group({
-      NowePytanie: ['', [Validators.required, Validators.minLength(10)]],
-      NowaDobraOdp: ['', [Validators.required, Validators.minLength(10)]],
-      Nowa1ZlaOdp: ['', [Validators.required, Validators.minLength(10)]],
-      Nowa2ZlaOdp: ['', [Validators.required, Validators.minLength(10)]],
-      Nowa3ZlaOdp: ['', [Validators.required, Validators.minLength(10)]],
+      NowePytanie: ['', Validators.required],
+      NowaDobraOdp: ['', Validators.required],
+      Nowa1ZlaOdp: ['', Validators.required],
+      Nowa2ZlaOdp: ['', Validators.required],
+      Nowa3ZlaOdp: ['', Validators.required],
     })
   }
 
 
 
   addQuestion() {
-    const json: object = {
+    const object: object = {
       Question: this.description,
       GoodAnwser: this.goodAnwser,
       FakeAnwserOne: this.fakeAnwserOne,
@@ -49,7 +49,16 @@ export class AddQuestionComponent implements OnInit {
     }
 
     console.log(this.AddQuestionForm.value);
-    this.qs.postQuestions(json);
+    this.qs.postQuestions(object);
 
   }
+
+  omit_special_char(event) {
+    var k;
+    k = event.keyCode;
+    return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8 || k == 32 || k == 46 || k == 58 || k == 44 || k == 63 || k == 37 || (k >= 48 && k <= 57));
+
+  }
+
+
 }
